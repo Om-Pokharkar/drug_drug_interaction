@@ -12,7 +12,7 @@ st.title("💊 Drug Interaction Severity Prediction App")
 st.write("Enter an interaction description or select a known pair to predict its severity level.")
 
 # Upload dataset for reference (optional)
-df = pd.read_csv("ddi_with_severity.csv")
+df = pd.read_csv("ddi_data_with_severity.csv")
 
 # Search existing record
 st.subheader("🔍 Search Existing Interaction")
