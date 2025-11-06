@@ -28,7 +28,7 @@ if st.button("Search"):
     ]
 
     if not result.empty:
-        desc = result.iloc[0]["interactiondescription"]
+        desc = result.iloc[0]["interaction description"]
         st.success(f"**Description Found:** {desc}")
         text_tfidf = tfidf.transform([desc])
         pred = model.predict(text_tfidf)[0]
